@@ -25,3 +25,14 @@ nav{
     width: 95px;
     padding: 10px;
 }
+
+.nav-links{
+    padding: 15px 0;
+    margin-left: auto;
+    height: fit-content;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin:  0 20px;   
+}
