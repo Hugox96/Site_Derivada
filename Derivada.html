@@ -3,10 +3,21 @@
 <head>
 	<title>Calculadora de Derivada</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.0/math.js"></script>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'><link rel="stylesheet" href="./style.css">
 	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-	<h1>Calculadora de Derivada</h1>
+	<div class="Header">
+		<nav>
+			<img src="Logo.png" id="logo">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</nav>
+	</div>
+	<h1> Calculadora de Derivada</h1>
 	<label for="funcao">Digite a função:</label>
 	<input type="text" id="funcao">
 	<button onclick="calcularDerivada()">Calcular Derivada</button>
