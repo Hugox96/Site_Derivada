@@ -1,0 +1,27 @@
+/* Css para editar as classes e ids do site */
+
+/* Definições gerais do site */
+*{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.Header{
+    height: 210vh;
+    width: 100%;
+    padding:0 8%;
+    background-color: antiquewhite;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo{
+    width: 95px;
+    padding: 10px;
+}
