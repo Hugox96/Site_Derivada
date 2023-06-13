@@ -13,7 +13,7 @@
     height: 210vh;
     width: 100%;
     padding:0 8%;
-    background-color: antiquewhite;
+    background-color:rgb(233, 255, 249);
 }
 
 nav{
@@ -37,4 +37,17 @@ nav{
 .nav-links li {
     display: inline-block;
     margin:  0 20px;   
+}
+
+.nav-links li .fa {
+    color: rgb(4, 109, 247);
+    font-size: 25px;
+    line-height: 50px;
+    transition: .5s;
+    bottom: auto;
+}
+
+.nav-links li .fa {
+    color: rgb(240, 126, 156);
+    font-size:25px;
 }
