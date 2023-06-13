@@ -49,5 +49,9 @@ nav{
 
 .nav-links li .fa {
     color: rgb(240, 126, 156);
-    font-size:25px;
+    font-size:35px;
+}
+
+.nav-links li .fa :hover{
+    background-color:rgb(17, 10, 10);
 }
