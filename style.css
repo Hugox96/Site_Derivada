@@ -8,6 +8,7 @@
     box-sizing: border-box;
 }
 
+/* Classe Principal do site */
 .Header{
     height: 210vh;
     width: 100%;
