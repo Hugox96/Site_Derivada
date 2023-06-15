@@ -24,8 +24,9 @@ nav{
 
 /* Id para o logo */
 #logo{
-    width: 95px;
-    padding: 10px;
+    width: 100px;
+    padding: 0px;
+    height: 100px;
 }
 
 .nav-links{
@@ -47,11 +48,6 @@ nav{
     bottom: auto;
 }
 
-.nav-links li .fa {
-    color: rgb(240, 126, 156);
-    font-size:35px;
-}
-
-.nav-links li .fa :hover{
+.nav-links li .fa:hover{
     background-color:rgb(17, 10, 10);
 }
