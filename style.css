@@ -4,8 +4,20 @@
 *{
     margin:0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
     box-sizing: border-box;
+}
+
+h1{
+    color: rgb(195, 208, 228);
+    text-align: center;
+}
+
+p{
+    color: rgb(195, 208, 228);
+    font-size: large;
+    font-weight: bolder;
 }
 
 /* Classe Principal do site */
