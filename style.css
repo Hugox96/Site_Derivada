@@ -22,7 +22,7 @@ p{
 
 /* Classe Principal do site */
 .Header{
-    height: 210vh;
+    height: 110vh;
     width: 100%;
     padding:0 8%;
     background-color: rgb(239, 241, 216);
@@ -69,5 +69,9 @@ nav{
 }
 
 .nav-links li .fa:hover{
-    color:rgb(207, 10, 10);
+    color:rgb(230, 129, 146);
+}
+
+.texto{
+    font-size: large;
 }
