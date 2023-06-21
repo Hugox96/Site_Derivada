@@ -73,5 +73,10 @@ nav{
 }
 
 .texto{
-    font-size: large;
+    font-size: larger;
+}
+
+.texto h1{
+    font-size: xx-large;
+
 }
