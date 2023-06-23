@@ -81,14 +81,46 @@ nav{
 
 }
 
-.derivada{
-    text-align: center;
-    background-color: rgb(195, 208, 228);
-    display: flex;
-    align-items: center; 
-    justify-content: space-between;
-    padding: 30px;
+.derivada {
+  text-align: center;
+  background-color: rgb(195, 208, 228);
+  border-radius: 12px;
+  display: flex;
+  margin-left: 15%;
+  margin-right: 25%;
+  flex-direction: row;
+  align-items: center;
+  padding: 30px;
+  width: 70%;
 }
+
+label {
+  color: rgb(6, 6, 7);
+  font-size: large;
+  font-weight: bolder;
+  margin-right: 4px; /* Ajuste a margem direita conforme necessário */
+}
+
+input[type="text"] {
+  margin-left: 20px; /* Ajuste a margem esquerda conforme necessário */
+}
+
+button{
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+button:hover{
+    color:brown;
+    background-color: aquamarine;
+}
+
+label[for="resultado"] {
+  margin-left: 10px;
+}
+
+
+
 
 /* .derivada h1{
     font-size: 25px;
