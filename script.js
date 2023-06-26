@@ -31,6 +31,7 @@ function calcularDerivada() {
 // Função para adicionar as etapas do passo a passo na página
 function adicionarEtapas(etapas) {
   const etapasContainer = document.querySelector('.etapas');
+  // etapasContainer.className = "etapasContainer";
 
   etapas.forEach((etapa, index) => {
     const etapaDiv = document.createElement('div');
@@ -38,6 +39,8 @@ function adicionarEtapas(etapas) {
 
     const descricao = document.createElement('p');
     descricao.textContent = etapa.descricao;
+    descricao.style.color="blue"
+    descricao.style.fontWeight="bold"
     etapaDiv.appendChild(descricao);
 
     if (etapa.equacao) {
@@ -45,7 +48,7 @@ function adicionarEtapas(etapas) {
       equacao.textContent = etapa.equacao;
       etapaDiv.appendChild(equacao);
     }
-
+    etapasContainer.style.marginTop="20px"
     etapasContainer.appendChild(etapaDiv);
   });
 }
