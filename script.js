@@ -46,13 +46,6 @@ function adicionarEtapas(etapas) {
       etapaDiv.appendChild(equacao);
     }
 
-
-    if (etapa.resultado) {
-      const resultado = document.createElement('span');
-      resultado.textContent = `Resultado: ${etapa.resultado}`;
-      etapaDiv.appendChild(resultado);
-    }
-
     etapasContainer.appendChild(etapaDiv);
   });
 }
