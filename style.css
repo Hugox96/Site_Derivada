@@ -86,12 +86,12 @@ nav{
   background-color: rgb(195, 208, 228);
   border-radius: 12px;
   display: flex;
-  margin-left: 15%;
-  margin-right: 25%;
+  margin-left: 19%;
+  margin-right: 35%;
   flex-direction: row;
   align-items: center;
   padding: 30px;
-  width: 70%;
+  width: 70%; 
 }
 
 label {
@@ -105,24 +105,32 @@ input[type="text"] {
   margin-left: 20px; /* Ajuste a margem esquerda conforme necessário */
 }
 
-button{
+/* button{
   border-radius: 5px;
   margin-left: 10px;
+  height: 40px;
+  width: 80px;
+
 }
 
 button:hover{
     color:brown;
     background-color: aquamarine;
-}
+} */
 
 label[for="resultado"] {
   margin-left: 10px;
 }
 
 .passo-a-passo {
-    background-color: #f4f4f4;
+    background-color: rgb(195, 208, 228);
     padding: 20px;
     margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    /* display: flex;
+    align-items: center; */
+    text-align: center;
   }
   
   .etapa {
@@ -132,11 +140,47 @@ label[for="resultado"] {
   h3 {
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
   }
   
 
+/* CSS */
+button{
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: rgb(230, 129, 146);
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 90%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  margin-left: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 0 15px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 90px;
+}
 
+button{
+  cursor: default;
+}
 
+button:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
 
 /* .derivada h1{
     font-size: 25px;
