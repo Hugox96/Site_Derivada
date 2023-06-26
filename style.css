@@ -119,6 +119,21 @@ label[for="resultado"] {
   margin-left: 10px;
 }
 
+.passo-a-passo {
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .etapa {
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+
 
 
 

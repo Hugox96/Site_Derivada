@@ -10,11 +10,13 @@
 function calcularDerivada() {
   var funcao = document.getElementById("funcao").value;
   var resultado = document.getElementById("resultado");
+  console.log(funcao)
 
   var derivada = math.derivative(funcao, 'x');
+  console.log(typeof derivada)
 
   var etapas = [];
-  etapas.push({ descricao: 'Etapa 1: Substitua x por um valor específico', equacao: `f(x) = ${funcao}`, valor: 2 });
+  etapas.push({ descricao: 'Etapa 1: Substitua x por um valor específico', equacao: `f(1) = ${funcao}` });
   etapas.push({ descricao: 'Etapa 2: Calcule a derivada', equacao: `f\'(x) = ${derivada.toString()}` });
 
   // Adicione mais etapas conforme necessário
@@ -44,11 +46,6 @@ function adicionarEtapas(etapas) {
       etapaDiv.appendChild(equacao);
     }
 
-    if (etapa.valor) {
-      const valor = document.createElement('span');
-      valor.textContent = `x = ${etapa.valor}`;
-      etapaDiv.appendChild(valor);
-    }
 
     if (etapa.resultado) {
       const resultado = document.createElement('span');
