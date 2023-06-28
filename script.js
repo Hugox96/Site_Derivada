@@ -9,7 +9,7 @@
 
 function calcularDerivada() {
   var funcao = document.getElementById("funcao").value;
-  var resultado = document.getElementById("resultado");
+  // var resultado = document.getElementById("resultado");
   console.log(funcao)
 
   var derivada = math.derivative(funcao, 'x');
@@ -22,7 +22,7 @@ function calcularDerivada() {
   // Adicione mais etapas conforme necessário
 
   // Atualize o resultado final
-  resultado.value = derivada.toString();
+  // resultado.value = derivada.toString();
 
   // Adicione as etapas à seção do passo a passo
   adicionarEtapas(etapas);
