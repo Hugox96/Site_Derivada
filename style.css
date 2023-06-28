@@ -12,8 +12,18 @@
 h1{
     color: rgb(195, 208, 228);
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     font-size: xx-large;
 }
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
 
 p{
     color: rgb(195, 208, 228);
@@ -23,7 +33,7 @@ p{
 
 /* Classe Principal do site */
 .Header{
-    height: 110vh;
+    height: auto;
     width: 100%;
     padding:0 8%;
     background-image: url(fundo1.jpg);
@@ -165,10 +175,6 @@ label[for="resultado"] {
     margin-bottom: 10px;
   }
   
-  h3 {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-  }
+
   
 
