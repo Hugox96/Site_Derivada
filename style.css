@@ -96,12 +96,12 @@ nav{
   background-color: rgb(195, 208, 228);
   border-radius: 12px;
   display: flex;
-  margin-left: 19%;
+  margin-left: 30%;
   margin-right: 35%;
   flex-direction: row;
   align-items: center;
   padding: 30px;
-  width: 70%; 
+  width: 40%; 
 }
 
 label {
@@ -158,21 +158,13 @@ button:focus {
   box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
 }
 
-
-
-
-label[for="resultado"] {
-  margin-left: 10px;
-}
-
-
 .passo-a-passo {
     background-color: rgb(195, 208, 228);
     padding: 20px;
     margin-left: 30%;
     margin-right: 35%;
     margin-top: 20px;
-    width: 50%;
+    width: 40%;
     border-radius: 12px;
     text-align: left;
   }
