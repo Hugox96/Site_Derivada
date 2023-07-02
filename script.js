@@ -36,15 +36,15 @@ var funcao = document.getElementById("funcao").value;
 var derivada = math.derivative(funcao, 'x');
 console.log(typeof derivada)
 
-var tipoFuncao = identificarTipoFuncao(funcao);
-adicionarPassosTipoFuncao(tipoFuncao);
-}
+var tipoFuncao = identificarTipoFuncao(funcao); // Adicionar essa linha para obter o tipo de função
+const etapas = tiposDeFuncao[tipoFuncao];
+adicionarPassosTipoFuncao(etapas)
 
 function adicionarPassosTipoFuncao(tipoFuncao) {
   const etapasContainer = document.querySelector('.etapas');
   etapasContainer.innerHTML = '';
 
-  const etapas = tiposDeFuncao[tipoFuncao];
+  // const etapas = tiposDeFuncao[tipoFuncao];
   etapas.forEach((etapa) => {
     const etapaDiv = document.createElement('div');
     etapaDiv.classList.add('etapa');
@@ -59,9 +59,8 @@ function adicionarPassosTipoFuncao(tipoFuncao) {
       etapaDiv.appendChild(equacao);
     }
 
-    etapasContainer.appendChild(etapaDiv);
-  });
-}
+ etapasContainer.appendChild(etapaDiv)});
+}}
 
 // function calcularDerivada() {
 //   var funcao = document.getElementById("funcao").value;
@@ -107,4 +106,4 @@ function adicionarPassosTipoFuncao(tipoFuncao) {
 //     etapasContainer.style.marginTop="20px"
 //     etapasContainer.appendChild(etapaDiv);
 //   });
-// }
+//}
