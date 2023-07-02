@@ -1,3 +1,4 @@
+// Função para identificar os o tipo de função em relação ao input
 function identificarTipoFuncao(funcao) {
   // Aqui você pode implementar a lógica para identificar o tipo de função
   // Exemplo simplificado considerando apenas as funções trigonométricas e polinomiais
@@ -9,6 +10,7 @@ function identificarTipoFuncao(funcao) {
     return 'outro';
   }
 }
+
 // Objeto tiposDeFunção para adicionar as descrições para cada função
 const tiposDeFuncao = {
   trigonometrica: [
@@ -27,15 +29,15 @@ const tiposDeFuncao = {
 };
 
 function calcularDerivada() {
-  var funcao = document.getElementById("funcao").value;
+var funcao = document.getElementById("funcao").value;
 //  var resultado = document.getElementById("resultado");
 //  console.log(funcao)
 
-//   var derivada = math.derivative(funcao, 'x');
-//   console.log(typeof derivada)
+var derivada = math.derivative(funcao, 'x');
+console.log(typeof derivada)
 
-  var tipoFuncao = identificarTipoFuncao(funcao);
-  adicionarPassosTipoFuncao(tipoFuncao);
+var tipoFuncao = identificarTipoFuncao(funcao);
+adicionarPassosTipoFuncao(tipoFuncao);
 }
 
 function adicionarPassosTipoFuncao(tipoFuncao) {
