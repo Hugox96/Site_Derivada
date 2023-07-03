@@ -1,7 +1,5 @@
 //  Função para identificar os o tipo de função em relação ao input
  function identificarTipoFuncao(funcao) {
-//   Aqui você pode implementar a lógica para identificar o tipo de função
-//   Exemplo simplificado considerando apenas as funções trigonométricas e polinomiais
    if (funcao.includes('sin') || funcao.includes('cos') || funcao.includes('tan')) {
      console.log("ok")
      return 'trigonometrica';
@@ -13,55 +11,54 @@
   }
 }
 
+
+function calcularDerivada() {
+var funcao = document.getElementById("funcao").value;
+var derivada = math.derivative(funcao, 'x');
+console.log(typeof derivada)
+
 // Objeto tiposDeFunção para adicionar as descrições para cada função, como por exemplo, trigonométrica ou polinomial
 const tiposDeFuncao = {
   trigonometrica: [
-    { descricao: 'Passo 1: Identifique a função trigonométrica', equacao: 'f(x) = ...' },
-    { descricao: 'Passo 2: Aplicar a regra de ...' },
-    { descricao: 'Passo 3: Simplificar ...' },
-    // Adicione mais passos conforme necessário
+    { descricao: 'Passo 1: Substitua x por um valor específico', equacao: `f(1) = ${funcao}` },
+    { descricao: 'Passo 2: Calcule a derivada', equacao: `f\'(x) = ${derivada.toString()}`},
+    // { descricao: 'Passo 3: Simplificar ...' },
   ],
   polinomial: [
     { descricao: 'Passo 1: Identifique a função polinomial', equacao: 'f(x) = ...' },
     { descricao: 'Passo 2: Aplicar a regra de ...' },
     { descricao: 'Passo 3: Simplificar ...' },
   ],
-  // Adicione mais tipos de função e seus passos correspondentes
 };
 
-
-function calcularDerivada() {
-var funcao = document.getElementById("funcao").value;
-//  var resultado = document.getElementById("resultado");
-//  console.log(funcao)
-
-var derivada = math.derivative(funcao, 'x');
-console.log(typeof derivada)
-
-var tipoFuncao = identificarTipoFuncao(funcao); // Adicionar essa linha para obter o tipo de função
+// Aqui obtemos o tipo da função
+var tipoFuncao = identificarTipoFuncao(funcao); 
 const etapas = tiposDeFuncao[tipoFuncao]; // O objeto etapas recebe o tipo de função digitado no input
-adicionarEtapas(etapas)}
+adicionarEtapas(etapas)
+} 
 
+// Função para criar as descrições das etapas na div
 function adicionarEtapas(etapas) {
   const etapasContainer = document.querySelector('.etapas');
    etapasContainer.innerHTML = '';
 
   // const etapas = tiposDeFuncao[tipoFuncao];
+  //Cada loop é uma criação de um elemento na div, sendo o 1º a div, depois o paragrafo e o span
   etapas.forEach((passo) => {
     const etapaDiv = document.createElement('div');
-    etapaDiv.classList.add('etapa');
+    passoDiv.classList.add('etapa');
 
     const descricao = document.createElement('p');
     descricao.textContent = passo.descricao;
-    etapaDiv.appendChild(descricao);
+    passoDiv.appendChild(descricao);
 
     if (passo.equacao) {
       const equacao = document.createElement('span');
       equacao.textContent = passo.equacao;
-      etapaDiv.appendChild(equacao);
+      passoDiv.appendChild(equacao);
     }
 
- etapasContainer.appendChild(etapaDiv)});
+ etapasContainer.appendChild(passoDiv)});
 }
 
 // function calcularDerivada() {
