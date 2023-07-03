@@ -25,10 +25,10 @@ const tiposDeFuncao = {
     { descricao: 'Passo 1: Identifique a função polinomial', equacao: 'f(x) = ...' },
     { descricao: 'Passo 2: Aplicar a regra de ...' },
     { descricao: 'Passo 3: Simplificar ...' },
-    // Adicione mais passos conforme necessário
   ],
   // Adicione mais tipos de função e seus passos correspondentes
 };
+
 
 function calcularDerivada() {
 var funcao = document.getElementById("funcao").value;
@@ -39,30 +39,30 @@ var derivada = math.derivative(funcao, 'x');
 console.log(typeof derivada)
 
 var tipoFuncao = identificarTipoFuncao(funcao); // Adicionar essa linha para obter o tipo de função
-const etapas = tiposDeFuncao[tipoFuncao];
-adicionarEtapas(etapas)
+const etapas = tiposDeFuncao[tipoFuncao]; // O objeto etapas recebe o tipo de função digitado no input
+adicionarEtapas(etapas)}
 
 function adicionarEtapas(etapas) {
   const etapasContainer = document.querySelector('.etapas');
-  // etapasContainer.innerHTML = '';
+   etapasContainer.innerHTML = '';
 
   // const etapas = tiposDeFuncao[tipoFuncao];
-  etapas.forEach((etapa) => {
+  etapas.forEach((passo) => {
     const etapaDiv = document.createElement('div');
     etapaDiv.classList.add('etapa');
 
     const descricao = document.createElement('p');
-    descricao.textContent = etapa.descricao;
+    descricao.textContent = passo.descricao;
     etapaDiv.appendChild(descricao);
 
-    if (etapa.equacao) {
+    if (passo.equacao) {
       const equacao = document.createElement('span');
-      equacao.textContent = etapa.equacao;
+      equacao.textContent = passo.equacao;
       etapaDiv.appendChild(equacao);
     }
 
  etapasContainer.appendChild(etapaDiv)});
-}}
+}
 
 // function calcularDerivada() {
 //   var funcao = document.getElementById("funcao").value;
