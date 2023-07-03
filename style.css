@@ -104,6 +104,23 @@ nav{
   width: 40%; 
 }
 
+.box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#erro{
+  position: fixed;
+  margin-top: 50px;
+}
+
+#funcao{
+  margin: 0;
+  padding: 0;  
+}
+
 label {
   color: rgb(6, 6, 7);
   font-size: large;

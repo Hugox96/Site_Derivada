@@ -3,7 +3,7 @@
    if (funcao.includes('sin') || funcao.includes('cos') || funcao.includes('tan')) {
      console.log("ok")
      return 'trigonometrica';
-  } else if (funcao.includes('x^')) {
+  } else if (funcao.includes('x') || funcao.includes('x^')) {
     console.log("Oi")
     return 'polinomial';
   } else {
@@ -14,6 +14,14 @@
 
 function calcularDerivada() {
 var funcao = document.getElementById("funcao").value;
+if (funcao == ''){
+   erro = document.getElementById('erro');
+   erro.innerHTML = 'Valor Errado';
+   erro.style.color = 'red';
+   erro.style.fontSize = 'small';
+}else{
+  erro.innerHTML = '';
+}
 var derivada = math.derivative(funcao, 'x');
 console.log(typeof derivada)
 
@@ -25,8 +33,8 @@ const tiposDeFuncao = {
     // { descricao: 'Passo 3: Simplificar ...' },
   ],
   polinomial: [
-    { descricao: 'Passo 1: Identifique a função polinomial', equacao: 'f(x) = ...' },
-    { descricao: 'Passo 2: Aplicar a regra de ...' },
+    { descricao: 'Passo 1: Identifique a função polinomial', equacao: `f(x) = ${funcao}` },
+    { descricao: 'Passo 2: Aplicar a regra de ...', equacao: `f\'(x) = ${derivada.toString()}`  },
     { descricao: 'Passo 3: Simplificar ...' },
   ],
 };
