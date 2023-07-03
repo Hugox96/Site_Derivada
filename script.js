@@ -34,6 +34,7 @@ const tiposDeFuncao = {
 // Aqui obtemos o tipo da função
 var tipoFuncao = identificarTipoFuncao(funcao); 
 const etapas = tiposDeFuncao[tipoFuncao]; // O objeto etapas recebe o tipo de função digitado no input
+console.log(etapas);
 adicionarEtapas(etapas)
 } 
 
@@ -45,7 +46,7 @@ function adicionarEtapas(etapas) {
   // const etapas = tiposDeFuncao[tipoFuncao];
   //Cada loop é uma criação de um elemento na div, sendo o 1º a div, depois o paragrafo e o span
   etapas.forEach((passo) => {
-    const etapaDiv = document.createElement('div');
+    const passoDiv = document.createElement('div');
     passoDiv.classList.add('etapa');
 
     const descricao = document.createElement('p');
