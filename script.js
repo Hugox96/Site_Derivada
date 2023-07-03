@@ -1,17 +1,19 @@
-// Função para identificar os o tipo de função em relação ao input
-function identificarTipoFuncao(funcao) {
-  // Aqui você pode implementar a lógica para identificar o tipo de função
-  // Exemplo simplificado considerando apenas as funções trigonométricas e polinomiais
-  if (funcao.includes('sin') || funcao.includes('cos') || funcao.includes('tan')) {
-    return 'trigonometrica';
+//  Função para identificar os o tipo de função em relação ao input
+ function identificarTipoFuncao(funcao) {
+//   Aqui você pode implementar a lógica para identificar o tipo de função
+//   Exemplo simplificado considerando apenas as funções trigonométricas e polinomiais
+   if (funcao.includes('sin') || funcao.includes('cos') || funcao.includes('tan')) {
+     console.log("ok")
+     return 'trigonometrica';
   } else if (funcao.includes('x^')) {
+    console.log("Oi")
     return 'polinomial';
   } else {
     return 'outro';
   }
 }
 
-// Objeto tiposDeFunção para adicionar as descrições para cada função
+// Objeto tiposDeFunção para adicionar as descrições para cada função, como por exemplo, trigonométrica ou polinomial
 const tiposDeFuncao = {
   trigonometrica: [
     { descricao: 'Passo 1: Identifique a função trigonométrica', equacao: 'f(x) = ...' },
@@ -38,11 +40,11 @@ console.log(typeof derivada)
 
 var tipoFuncao = identificarTipoFuncao(funcao); // Adicionar essa linha para obter o tipo de função
 const etapas = tiposDeFuncao[tipoFuncao];
-adicionarPassosTipoFuncao(etapas)
+adicionarEtapas(etapas)
 
-function adicionarPassosTipoFuncao(tipoFuncao) {
+function adicionarEtapas(etapas) {
   const etapasContainer = document.querySelector('.etapas');
-  etapasContainer.innerHTML = '';
+  // etapasContainer.innerHTML = '';
 
   // const etapas = tiposDeFuncao[tipoFuncao];
   etapas.forEach((etapa) => {
@@ -106,4 +108,4 @@ function adicionarPassosTipoFuncao(tipoFuncao) {
 //     etapasContainer.style.marginTop="20px"
 //     etapasContainer.appendChild(etapaDiv);
 //   });
-//}
+// }
