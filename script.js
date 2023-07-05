@@ -28,14 +28,13 @@ console.log(typeof derivada)
 // Objeto tiposDeFunção para adicionar as descrições para cada função, como por exemplo, trigonométrica ou polinomial
 const tiposDeFuncao = {
   trigonometrica: [
-    { descricao: 'Passo 1: Substitua x por um valor específico', equacao: `f(1) = ${funcao}` },
-    { descricao: 'Passo 2: Calcule a derivada', equacao: `f\'(x) = ${derivada.toString()}`},
+    { descricao: 'Passo 1: Essa é uma função trigonmetrica', equacao: `f(1) = ${funcao}` },
+    { descricao: 'Passo 2: Calculando a derivada com a regra da cadeia', equacao: `f\'(x) = ${derivada.toString()}`},
     // { descricao: 'Passo 3: Simplificar ...' },
   ],
   polinomial: [
     { descricao: 'Passo 1: Identifique a função polinomial', equacao: `f(x) = ${funcao}` },
-    { descricao: 'Passo 2: Aplicar a regra de ...', equacao: `f\'(x) = ${derivada.toString()}`  },
-    { descricao: 'Passo 3: Simplificar ...' },
+    { descricao: 'Passo 2: Aplicar a regra de dos polinomios', equacao: `f\'(x) = ${derivada.toString()}`  },
   ],
 };
 
@@ -49,7 +48,7 @@ adicionarEtapas(etapas)
 // Função para criar as descrições das etapas na div
 function adicionarEtapas(etapas) {
   const etapasContainer = document.querySelector('.etapas');
-   etapasContainer.innerHTML = '';
+  //  etapasContainer.innerHTML = '';
 
   // const etapas = tiposDeFuncao[tipoFuncao];
   //Cada loop é uma criação de um elemento na div, sendo o 1º a div, depois o paragrafo e o span
@@ -58,7 +57,10 @@ function adicionarEtapas(etapas) {
     passoDiv.classList.add('etapa');
 
     const descricao = document.createElement('p');
+    console.log(descricao)
     descricao.textContent = passo.descricao;
+    descricao.style.color="blue"
+    descricao.style.fontWeight="bold"
     passoDiv.appendChild(descricao);
 
     if (passo.equacao) {
