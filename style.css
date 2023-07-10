@@ -35,9 +35,13 @@ p{
 .Header{
     height: auto;
     width: 100%;
-    padding:0 8%;
+    padding:0%;
     background-image: url(fundo1.jpg);
 }
+
+header{
+  background-color:floralwhite;
+} 
 
 nav{
     display: flex;
@@ -60,7 +64,7 @@ nav{
 } */
 
 .nav-links{
-    padding: 15px 0;
+    padding: 25px 0;
     margin-left: auto;
     height: fit-content;
 }
@@ -84,6 +88,7 @@ nav{
 
 .texto{
     font-size: larger;
+    padding-left: 2%;
 }
 
 .texto h1{
