@@ -42,6 +42,7 @@ p{
 
 header{
   background-color:floralwhite;
+  height: 85px;
 } 
 
 nav{
@@ -53,7 +54,8 @@ nav{
 /* Id para o logo */
 #logo{
     width: 100px;
-    padding: 10px;
+    padding: 26px;
+    margin-bottom: 20px;
     height: 100px;
 }
 
@@ -77,10 +79,10 @@ nav{
 
 .nav-links li .fa {
     color: rgb(195, 208, 228);
-    font-size: 35px;
+    font-size: 30px;
     line-height: 60px;
     transition: .5s;
-    bottom: auto;
+    margin-bottom: 20px;
 }
 
 .nav-links li .fa:hover{
