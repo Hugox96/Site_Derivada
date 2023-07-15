@@ -121,7 +121,7 @@ nav{
   background-color: rgb(195, 208, 228);
   border-radius: 12px;
   display: flex;
-  margin-left: 30%;
+  margin-left: 32%;
   margin-right: 35%;
   flex-direction: row;
   align-items: center;
@@ -131,6 +131,8 @@ nav{
 
 .box{
   display: flex;
+  width: 40%;
+  margin-left: 8%;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -143,14 +145,18 @@ nav{
 
 #funcao{
   margin: 0;
-  padding: 0;  
+  padding: 0;
+  width: 100%;
+  border-radius: 8px;
+  border-color:rgb(230, 129, 146);  
 }
 
 label {
   color: rgb(6, 6, 7);
   font-size: large;
   font-weight: bolder;
-  margin-right: 4px; /* Ajuste a margem direita conforme necessário */
+  margin-right: 1px; /* Ajuste a margem direita conforme necessário */;
+  margin-left: 5%;
 }
 
 input[type="text"] {
@@ -177,7 +183,7 @@ button{
   height: 44px;
   line-height: 1;
   margin: 12px 0 0;
-  margin-left: 10px;
+  margin-left: 30px;
   outline: none;
   overflow: hidden;
   padding: 0 15px;
@@ -189,7 +195,7 @@ button{
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 90px;
+  width: 20%;
 }
 
 button{
