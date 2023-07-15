@@ -152,7 +152,7 @@ nav{
 }
 
 label {
-  color: rgb(6, 6, 7);
+  color:rgb(180, 91, 105);
   font-size: large;
   font-weight: bolder;
   margin-right: 1px; /* Ajuste a margem direita conforme necessário */;
@@ -212,7 +212,7 @@ button:focus {
     margin-left: 30%;
     margin-right: 35%;
     margin-top: 20px;
-    width: 35%;
+    width: 40%;
     border-radius: 12px;
     text-align: left;
   }
