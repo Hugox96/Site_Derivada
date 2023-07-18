@@ -239,7 +239,7 @@ button:focus {
 }
 
 @media (max-width:769px){
-  .button{
+  button{
     width: 80%;
   }
 }
@@ -247,7 +247,7 @@ button:focus {
 @media (max-width:769px){
   .texto p{
     font-size: 0.9rem;
-  } 
+  }
 }
 
 @media (max-width:768px){
