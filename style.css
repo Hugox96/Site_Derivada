@@ -226,6 +226,14 @@ button:focus {
     margin-bottom: 10px;
   }
   
-
+/* Estilo para telas menores que 768px */
+@media (max-width: 768px) {
+  .derivada {
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+  };
+}
   
 
