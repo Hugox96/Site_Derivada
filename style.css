@@ -9,6 +9,11 @@
     box-sizing: border-box;
 }
 
+body{
+  min-height:100vh;
+  min-width: 100vw;
+}
+
 h1{
     color: rgb(195, 208, 228);
     text-align: center;
@@ -44,7 +49,7 @@ p{
 }
 
 /* Classe Principal do site */
-.Header{
+main{
   /* As unidas vh(viewport height) e vw(viewport width)  ajudam a tornar a tela mais responsiva*/
     height: 150vh;
     width: 100vw;
