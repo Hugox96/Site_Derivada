@@ -250,6 +250,13 @@ button:focus {
   } 
 }
 
-
+@media (max-width:768px){
+  p .span{
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
   
 
