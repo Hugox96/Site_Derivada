@@ -237,6 +237,14 @@ button:focus {
     width: 60%;
   }
 
+  #funcao{
+    padding: 5%;
+  }
+
+  label{
+    margin-bottom: 3%;
+  }
+
   .passo-a-passo{
     flex-direction: column;
     margin-left: 20%;
