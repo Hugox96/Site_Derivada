@@ -51,7 +51,7 @@ p{
 /* Classe Principal do site */
 main{
   /* As unidas vh(viewport height) e vw(viewport width)  ajudam a tornar a tela mais responsiva*/
-    height: 150vh;
+    height: auto;
     width: 100vw;
     padding:0% 0.1%;
     background-image: url(fundo1.jpg);
@@ -229,7 +229,7 @@ button:focus {
 /* --------------------------------Adicionando responsividade ---------------------------------------------------------------- */
 
 /* Estilo para telas menores que 768px */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .derivada {
     flex-direction: column;
     margin-left: 20%;
