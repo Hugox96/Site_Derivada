@@ -68,6 +68,10 @@ header{
   height: 50px;
 }
 
+.navegação li :hover{
+  color:rgb(230, 129, 146);
+}
+
 nav{
     display: flex;
     align-items: center;
