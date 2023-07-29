@@ -59,17 +59,23 @@ function adicionarEtapas(etapas) {
     const descricao = document.createElement('p');
     console.log(descricao)
     descricao.textContent = passo.descricao;
-    descricao.style.color="blue"
+    descricao.style.color="darkred"
     descricao.style.fontWeight="bold"
     passoDiv.appendChild(descricao);
 
     if (passo.equacao) {
       const equacao = document.createElement('span');
       equacao.textContent = passo.equacao;
+      equacao.style.fontWeight = "bold"
+      // Adicione o código LaTeX da equação entre os delimitadores de dólar (\$)
+      equacao.innerHTML = `$$${passo.equacao}$$`;
       passoDiv.appendChild(equacao);
     }
 
  etapasContainer.appendChild(passoDiv)});
+ MathJax.typesetPromise([etapasContainer])
+ .catch((err) => console.log('Erro ao renderizar as equações:', err));
+
 }
 
 // function calcularDerivada() {
