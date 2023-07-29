@@ -6,7 +6,11 @@
   } else if (funcao.includes('x') || funcao.includes('x^')) {
     console.log("Oi")
     return 'polinomial';
-  } else {
+  } else if (!funcao.includes('x')){
+    console.log("Olá")
+    return 'constante';
+  } 
+  else {
     return 'outro';
   }
 }
@@ -32,9 +36,14 @@ const tiposDeFuncao = {
     { descricao: 'Passo 2: Calculando a derivada com a regra da cadeia', equacao: `f'(x) = ${derivada.toString()}`},
     // { descricao: 'Passo 3: Simplificar ...' },
   ],
+
   polinomial: [
     { descricao: 'Passo 1: Identifique a função polinomial', equacao: `f(x) = ${funcao}` },
     { descricao: 'Passo 2: Aplicar a regra dos polinomios', equacao: `f\'(x) = ${derivada.toString()}`  },
+  ],
+
+  constante: [
+    { descricao: 'Passo 1: Derivada de constante é igual a 0'},
   ],
 };
 
