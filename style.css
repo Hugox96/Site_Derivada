@@ -62,6 +62,43 @@ header{
   height: 85px;
 }
 
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* Id para o logo */
+#logo{
+  width: 100px;
+  padding: 26px;
+  height: 100px;
+}
+
+.nav-links{
+  padding: 5px 25px ;
+  margin-left: auto;
+  height: fit-content;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin:  0 20px;   
+}
+
+.nav-links li .fa {
+  color: rgb(195, 208, 228);
+  font-size: 30px;
+  line-height: 60px;
+  transition: .5s;
+  bottom: auto;
+}
+
+.nav-links li .fa:hover{
+  color:rgb(230, 129, 146);
+}
+
 .navegação{
   background-color: rgb(195, 208, 228);
   border-radius: 2px;
@@ -70,49 +107,6 @@ header{
 
 .navegação li :hover{
   color:rgb(230, 129, 146);
-}
-
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* Id para o logo */
-#logo{
-    width: 100px;
-    padding: 26px;
-    height: 100px;
-}
-
-/* h2{
-    display: flex;
-    align-items: center;
-    color: blueviolet;
-    margin-left: 20px;
-} */
-
-.nav-links{
-    padding: 5px 25px ;
-    margin-left: auto;
-    height: fit-content;
-}
-
-.nav-links li {
-    display: inline-block;
-    margin:  0 20px;   
-}
-
-.nav-links li .fa {
-    color: rgb(195, 208, 228);
-    font-size: 30px;
-    line-height: 60px;
-    transition: .5s;
-    bottom: auto;
-}
-
-.nav-links li .fa:hover{
-    color:rgb(230, 129, 146);
 }
 
 .texto{
