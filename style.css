@@ -68,7 +68,6 @@ nav{
   justify-content: space-between;
 }
 
-
 /* Id para o logo */
 #logo{
   width: 100px;
@@ -99,6 +98,7 @@ nav{
   color:rgb(230, 129, 146);
 }
 
+/* Estilizando os links de navegação */
 .navegação{
   background-color: rgb(195, 208, 228);
   border-radius: 2px;
@@ -119,6 +119,7 @@ nav{
 
 }
 
+/* Estilizando a parte do cálculo de derivada */
 .derivada {
   text-align: center;
   background-color: rgb(195, 208, 228);
